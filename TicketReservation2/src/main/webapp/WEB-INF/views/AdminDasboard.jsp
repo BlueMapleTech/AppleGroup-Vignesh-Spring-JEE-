@@ -25,7 +25,7 @@
 
 	<a href="tickettype">ADD TICKET</a>||
 
-	<a href="registrationstatus">REGISTRATION STATUS</a>||
+	<!-- <a href="registrationstatus">REGISTRATION STATUS</a>|| -->
 
 
 	<div class="container-fluid">
@@ -130,7 +130,7 @@
 							<tr>
 								<th>ReservationId</th>
 								<th>Status</th>
-								<th>Edit</th>
+								<!-- <th>Edit</th> -->
 							</tr>
 						</thead>
 						<tbody>
@@ -140,7 +140,7 @@
 
 										<td><c:out value="${Status.reservation_status_id}" /></td>
 										<td><c:out value="${Status.reservation_status}" /></td>
-										<td><a href="edit3?id=${Ticket.reservation_status_id}">Edit</a></td>
+										<%-- <td><a href="edit3?id=${Ticket.reservation_status_id}">Edit</a></td> --%>
 									</tr>
 								</c:forEach>
 							</c:forEach>

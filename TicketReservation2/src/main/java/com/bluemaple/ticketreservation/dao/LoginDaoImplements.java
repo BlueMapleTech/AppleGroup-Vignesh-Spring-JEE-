@@ -20,7 +20,7 @@ public class LoginDaoImplements implements LoginDaoInterface {
 	public User login(String name1) {
 		// TODO Auto-generated method stub
 
-		jdbcTemplate = new JdbcTemplate(dataSource);
+		
 		String sql = "SELECT * FROM user WHERE username = ?";
 
 		User user = (User) getJdbcTemplate().queryForObject(sql,
